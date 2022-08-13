@@ -1,0 +1,109 @@
+*{padding: 0;
+margin: 0;
+}
+.header{
+    height: 80px;
+    background-color: rgb(116, 122, 210);
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    height: 100%;
+}
+.header__nav_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & div{
+    margin-top: 10px;
+    }
+    & div img{
+        width: 70%;
+        height: 70%;
+    }
+} 
+form input[type="text"]{
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        border: none;
+        width: 120px;
+        height: 30px;
+        padding-left: 10px;
+    }
+.search__button{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    width: 80px;
+    height: 30px;
+    font-family: sans-serif;
+}
+// .basket{
+//     background-color: rgb(255, 255, 255);
+//     height: 50px;
+//     border-bottom: 1px solid rgb(198, 233, 211);
+// }
+.basket__btn{
+    display: flex;
+    margin-top: 15px;
+    & a{
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    margin-right: 150px;
+    padding: 10px 15px;
+    background-color: bisque;
+}
+}
+.basket{
+    top: 50px;
+    right: 190px;
+    display: none ;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    & div{
+        min-height: 25px;
+    }
+}
+.active {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+align-items: center;}
+    
+.goods-list{
+    margin-top: 40px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.goods-item{
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    & div img{
+        object-fit: cover;
+        width: 100%;
+    }
+}
+.goods-item-text{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    & h3 {
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+    & p{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        font-size: 15px;
+        font-family: sans-serif;
+    }
+}
+.cart-button{
+    padding: 5px 12px;
+}
